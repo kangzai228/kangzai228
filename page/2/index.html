@@ -230,20 +230,20 @@ var _hmt = _hmt || [];
                   <div id="js-content" class="content-ll">
                     
   
-    <article id="post-version-description" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-vue-vite-project" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2023-05/version-description.html">语义化版本</a>
+      <a class="article-title" href="/2022-03/vue-vite-project.html">Vue(Vite)教程</a>
     </h1>
   
 
         
-        <a href="/2023-05/version-description.html" class="archive-article-date">
-  	<time datetime="2023-05-08T14:03:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-05-08</time>
+        <a href="/2022-03/vue-vite-project.html" class="archive-article-date">
+  	<time datetime="2022-03-18T03:48:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-18</time>
 </a>
         
         <!-- 开始添加字数统计-->
@@ -253,7 +253,7 @@ var _hmt = _hmt || [];
     <span class="post-meta-item-icon">
       <i class="fa fa-keyboard-o"></i>
       <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">226字</span>
+      <span class="post-count" style="font-size: 16px;color: grey">175字</span>
     </span>
   </span>
 
@@ -282,13 +282,13 @@ var _hmt = _hmt || [];
 
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>说实话我之前还真没把这个当回事，但是当我打算把这个项目给别人用的时候我发现版本号似乎也能传递一些比较重要的信息，所以开发这个项目的时候我是一直遵守这个标准的。</p>
-</blockquote>
-<h2 id="简单来说语义化版本将版本号分为-X-Y-Z。"><a href="#简单来说语义化版本将版本号分为-X-Y-Z。" class="headerlink" title="简单来说语义化版本将版本号分为 X.Y.Z。"></a>简单来说语义化版本将版本号分为 <strong>X.Y.Z</strong>。</h2><p>1.当你做了不向下兼容的更改之后 X 要递增。</p>
-<p>2.当你做了向下兼容的功能性新增的时候 Y 要递增。</p>
-<p>3.当你做了向下兼容的修正时 Z 要递增。</p>
-<p>这样版本号就可以向用户传递对应的信息，这无疑是十分有用的，最明显的就是当用户看到 X 递增的时候就会十分谨慎，因为贸然更新可能会导致现有的程序出现不兼容的情况。</p>
+        <h2 id="搭建第一个-Vite-项目"><a href="#搭建第一个-Vite-项目" class="headerlink" title="搭建第一个 Vite 项目"></a>搭建第一个 Vite 项目</h2><h3 id="安装Vite"><a href="#安装Vite" class="headerlink" title="安装Vite"></a>安装Vite</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm create vite@latest</span><br><span class="line">yarn create vite</span><br><span class="line">pnpm create vite</span><br></pre></td></tr></table></figure>
+<h3 id="构建一个Vite-Vue-项目"><a href="#构建一个Vite-Vue-项目" class="headerlink" title="构建一个Vite + Vue 项目"></a>构建一个Vite + Vue 项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># npm 6.x</span></span><br><span class="line">npm create vite@latest my-vue-app --template vue</span><br><span class="line"></span><br><span class="line"><span class="comment"># npm 7+, extra double-dash is needed:</span></span><br><span class="line">npm create vite@latest my-vue-app --template vue</span><br><span class="line"></span><br><span class="line"><span class="comment"># yarn</span></span><br><span class="line">yarn create vite my-vue-app --template vue</span><br><span class="line"></span><br><span class="line"><span class="comment"># pnpm</span></span><br><span class="line">pnpm create vite my-vue-app --template vue</span><br></pre></td></tr></table></figure>
+
+<h3 id="【Vue3】vite-配置IP，解决“vite-use-host-to-expose”"><a href="#【Vue3】vite-配置IP，解决“vite-use-host-to-expose”" class="headerlink" title="【Vue3】vite 配置IP，解决“vite use --host to expose”"></a>【Vue3】vite 配置IP，解决“vite use <code>--host</code> to expose”</h3><h4 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h4><p>vite 启动后出现 “ Network: use –host to expose ”</p>
+<h4 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h4><p>这是因为IP没有做配置，所以不能从IP启动，需要在 vite.config.js做相应配置；</p>
+<h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><p>在 vite.config.js中添加 server.host 为 0.0.0.0：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> defineConfig(&#123;</span><br><span class="line">    <span class="attr">plugins</span>: [vue()],</span><br><span class="line">    <span class="comment">// 在文件中添加以下内容</span></span><br><span class="line">    <span class="attr">server</span>: &#123;</span><br><span class="line">        <span class="attr">host</span>: <span class="string">&#x27;0.0.0.0&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
       
 
@@ -302,7 +302,11 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">语义化版本</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Vue3</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Vite</a>
         		</li>
       		
 		</ul>
@@ -312,7 +316,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2023-05/version-description.html">展开全文 >></a>
+          <a class="article-more-a" href="/2022-03/vue-vite-project.html">展开全文 >></a>
         </p>
       
 
@@ -345,20 +349,20 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-git_End-of-line_marker" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-esp8266-01s" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2023-03/git_End-of-line_marker.html">git的行尾的换行结束符处理</a>
+      <a class="article-title" href="/2022-02/esp8266-01s.html">ESP8266_01S烧录固件教程</a>
     </h1>
   
 
         
-        <a href="/2023-03/git_End-of-line_marker.html" class="archive-article-date">
-  	<time datetime="2023-03-14T14:02:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-03-14</time>
+        <a href="/2022-02/esp8266-01s.html" class="archive-article-date">
+  	<time datetime="2022-02-14T04:53:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-14</time>
 </a>
         
         <!-- 开始添加字数统计-->
@@ -368,7 +372,7 @@ var _hmt = _hmt || [];
     <span class="post-meta-item-icon">
       <i class="fa fa-keyboard-o"></i>
       <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">1.1k字</span>
+      <span class="post-count" style="font-size: 16px;color: grey">341字</span>
     </span>
   </span>
 
@@ -377,7 +381,7 @@ var _hmt = _hmt || [];
     <span class="post-meta-item-icon">
       <i class="fa fa-hourglass-half"></i>
       <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">4分</span>
+      <span class="post-count" style="font-size: 16px;color: grey">1分</span>
     </span>
   </span>
 </div>
@@ -397,41 +401,10 @@ var _hmt = _hmt || [];
 
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>解释一些概念：</p>
-<p>CRLF：回车换行。CR：即平常说的\r，回车；LF：即\n，换行。</p>
-<p>windows下换行符为CRLF，unix系统（如linux，现在的mac等）用LF。</p>
-<p>git服务器，一般是在linux上部署。</p>
-<p>git客户端，即我们的开发环境，个人工作环境，集成部署发布环境等，可能是windows、mac、linux等。</p>
-<p>本文以git客户端在windows下环境说明，在unix环境就不太可能遇到我说的这个问题了。</p>
-<p>以我个人机器的默认git客户端配置来说，在检出和检入时，行尾换行符会做相关转换。如：我在windows下写的代码，提交仓库时，行尾的换行符CRLF会转换为LF（官方术语：normalization，标准化），这个时间点我测试是在提交代码到本地仓库的时候，不是推送远程。当从远程拉取代码到本地的时候，行尾换行符会转换（官方术语：conversion，转换），从LF到CRLF，因为我是windows环境，这个是自动识别转换了。</p>
-<p>接下来说个业务场景，抛砖引玉。</p>
-<h2 id="业务背景"><a href="#业务背景" class="headerlink" title="业务背景"></a>业务背景</h2><p>我在windows下写了个应用启停的shell脚本，提交到git仓库。测试人员会拉取代码，将项目打包部署到测试环境然后使用这个脚本启动。</p>
-<p>问题：在windows下换行符是CRLF，提交仓库时转换为LF。但测试人员用的也是windows，git默认配置，拉下来转换为CRLF。将这个脚本上传到服务器执行就会出问题，格式不正确，报错类似结束符不正确：\r之类的。</p>
-<p>用vim -b打开，看到报错的行尾有个^M之类的符号等。</p>
-<p>比较low的方法就是用个转换工具（抱歉，名字突然忘了，建议上网搜一下），将windows格式转换为unix格式，或者vim打开的时候在编辑模式输入：set fileformat&#x3D;unix回车保存退出即可。</p>
-<p>现在，期望的是，不要发生这种转换，测试人员下载下来的时候换行符就是LF，上传到linux执行没有问题。</p>
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>我最开始遇到这类问题，在网上搜过，也了解了下面这个配置：算是自动转换的开关配置。其实对这个场景用处不大，因为，我只需要对其中的几个文件进行处理，并且这个配置只作用于我的客户端，不能让所有协同开发人员都要关心这个配置问题。</p>
-<p>git config –global core.autocrlf  [true | input | false] </p>
-<p>一个很理想的解决办法：</p>
-<p>在工程的目录下，建立一个文件，文件名：.gitattributes，和.gitignore很像。</p>
-<p>内容如下：检入进行标准化转换为LF，但检出不转换。</p>
-<p>*.sh     eol&#x3D;lf</p>
-<p>.gitattributes，是定义每个路径的属性配置文件，有很多属性，说明：<a target="_blank" rel="noopener" href="http://schacon.github.io/git/gitattributes.html">http://schacon.github.io/git/gitattributes.html</a></p>
-<p>上面链接文档，说的很清楚，没必要重复对这个配置进行更多解释，内容也不少，有需要查一下。</p>
-<p>说下这个问题：</p>
-<p>关于行尾结束符这里，有两个属性参数可以选择设置，每个属性也有几个不同的值。上面的配置：*.sh eol&#x3D;lf，就是指当前目录下所有sh结尾的文件，设置属性eol，它的值是lf：检入时标准化为LF，检出时阻止转换为CRLF.</p>
-<p>eol</p>
-<p>This attribute sets a specific line-ending style to be used in the working directory. It enables end-of-line normalization without any content checks, effectively setting the text attribute.</p>
-<p>Set to string value “crlf”</p>
-<p>This setting forces git to normalize line endings for this file on checkin and convert them to CRLF when the file is checked out.</p>
-<p>Set to string value “lf”</p>
-<p>This setting forces git to normalize line endings to LF on checkin and prevents conversion to CRLF when the file is checked out.</p>
-<p>这样就解决问题了。</p>
-<p>其它属性说明或示例等看上面的链接自查即可。</p>
-<p>最后，说下.gitattributes文件位置，不一定必须在工程根目录下，另外该设置项也有优先级（如，全局范围、系统范围、该配置文件距离作用文件的路径距离等都有影响）。</p>
-<p>本文仅是作为一个场景示例说明和解决办法。如遇类似问题，可参考相关属性设置或配置项灵活解决。</p>
-<p>转自 <a target="_blank" rel="noopener" href="https://blog.csdn.net/x763795151/article/details/107775410">https://blog.csdn.net/x763795151/article/details/107775410</a></p>
-
+        <p><img src="https://cdn.jsdelivr.net/gh/kangzai228/figure_bed/images/20220214125036.png"></p>
+        
+          <a class="article-more-a" href="/2022-02/esp8266-01s.html#more">more >></a>
+        
       
 
       
@@ -444,25 +417,40 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">ESP8266</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">LF</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Arduino</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">CRLF</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">烧录固件</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编程器</a>
         		</li>
       		
 		</ul>
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/物联网//" class="article-tag-list-link color4">物联网</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2023-03/git_End-of-line_marker.html">展开全文 >></a>
+          <a class="article-more-a" href="/2022-02/esp8266-01s.html">展开全文 >></a>
         </p>
       
 
@@ -495,20 +483,20 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-div-button" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-esp32-esp8266-mac" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2023-03/div-button.html">用div与button标签作为按钮的一些区别</a>
+      <a class="article-title" href="/2022-02/esp32-esp8266-mac.html">esp32或者esp8266获取和修改MAC的方法</a>
     </h1>
   
 
         
-        <a href="/2023-03/div-button.html" class="archive-article-date">
-  	<time datetime="2023-03-14T13:37:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-03-14</time>
+        <a href="/2022-02/esp32-esp8266-mac.html" class="archive-article-date">
+  	<time datetime="2022-02-14T03:36:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-14</time>
 </a>
         
         <!-- 开始添加字数统计-->
@@ -518,7 +506,143 @@ var _hmt = _hmt || [];
     <span class="post-meta-item-icon">
       <i class="fa fa-keyboard-o"></i>
       <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">471字</span>
+      <span class="post-count" style="font-size: 16px;color: grey">312字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="fa fa-hourglass-half"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">1分</span>
+    </span>
+  </span>
+</div>
+          
+        <!-- 添加字数统计完成 -->
+
+        
+      </header>
+    
+    
+    <!-- 目录内容 -->
+    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
+    
+    <!-- 目录内容结束 -->
+
+
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="What’s-a-MAC-Address"><a href="#What’s-a-MAC-Address" class="headerlink" title="What’s a MAC Address?"></a>What’s a MAC Address?</h2><blockquote>
+<p>MAC Address stands for Media Access Control Address and it is a hardware unique identifier that identifies each device on a network.</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2022-02/esp32-esp8266-mac.html#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">ESP8266</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ESP32</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">MAC</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Arduino</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/物联网//" class="article-tag-list-link color4">物联网</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022-02/esp32-esp8266-mac.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <!-- 默认的目录
+        
+        -->
+    </div>
+</aside>
+
+
+
+  
+    <article id="post-innodb-autoinc" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022-02/innodb-autoinc.html">MySQL使用on duplicate key update引起主键不连续自增</a>
+    </h1>
+  
+
+        
+        <a href="/2022-02/innodb-autoinc.html" class="archive-article-date">
+  	<time datetime="2022-02-08T02:30:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-08</time>
+</a>
+        
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-keyboard-o"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">607字</span>
     </span>
   </span>
 
@@ -547,612 +671,13 @@ var _hmt = _hmt || [];
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p><font color=red>如果button在form表单内部，则可以不用JS绑定onclick属性就可以提交表单内容；</font></p>
-<p>而如果不在form表单内部，又不考虑语义化，那么作为按钮，用div和button来写按钮似乎就没什么太多的区别，只存在一些外观上的细微区别。<br>button标签的外观如下：</p>
-<p>下面分别对button和div进行同样的css修饰：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;button.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span>&gt;</span>按钮1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span>按钮2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">margin-bottom</span>:<span class="number">5px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">button</span>&#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#00BFFF</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">600</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#1E90FF</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#00BFFF</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">600</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#1E90FF</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在外观上二者的形式如下：</p>
-<p>似乎并没什么区别，但细微观察会发现，二者还是存在如下区别：<br>1.div的默认box-sizing属性为content-box，而button默认为border-box，因此div会比button看上去大一些；</p>
-<p>2.button的cursor属性默认值类似于default，鼠标悬停在button上方为默认形式，而div的cursor则是text类型，并且div的user-select为text属性，即可以内部文本可以被选中，而button的默认为none，不可选中内部文本；</p>
-<p>3.如果不给button设置background-color或border属性，则它存在一个默认的点击动画，鼠标点击时背景颜色或边框会动态变化以呈现出点击的动画效果，而div则不会。</p>
-<p>4.但是如果给button设置了background-color和border属性，这些默认的点击动画将会消失。</p>
-<p>转自: <a target="_blank" rel="noopener" href="https://blog.csdn.net/hhthht8888/article/details/86553277">https://blog.csdn.net/hhthht8888/article/details/86553277</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">div</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">button</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Html</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2023-03/div-button.html">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <!-- 默认的目录
-        
-        -->
-    </div>
-</aside>
-
-
-
-  
-    <article id="post-install-nodejs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022-11/install-nodejs.html">二进制安装nodejs</a>
-    </h1>
-  
-
-        
-        <a href="/2022-11/install-nodejs.html" class="archive-article-date">
-  	<time datetime="2022-11-29T01:09:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-11-29</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-keyboard-o"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">209字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="fa fa-hourglass-half"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">1分</span>
-    </span>
-  </span>
-</div>
-          
-        <!-- 添加字数统计完成 -->
-
-        
-      </header>
-    
-    
-    <!-- 目录内容 -->
-    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
-    
-    <!-- 目录内容结束 -->
-
-
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一-安装"><a href="#一-安装" class="headerlink" title="一 安装"></a>一 安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span>/</span><br><span class="line">mkdir nodejs</span><br><span class="line"><span class="built_in">cd</span> nodejs</span><br><span class="line">wget https://cdn.npmmirror.com/binaries/node/v16.18.1/node-v16.18.1-linux-x64.tar.xz</span><br><span class="line">tar xf node-v16.18.1-linux-x64.tar.xz</span><br></pre></td></tr></table></figure>
-
-<h2 id="二-node和npm建立两个软连接或者设置配置文件"><a href="#二-node和npm建立两个软连接或者设置配置文件" class="headerlink" title="二 node和npm建立两个软连接或者设置配置文件"></a>二 <code>node和npm建立两个软连接</code>或者<code>设置配置文件</code></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">node和npm建立两个软连接</span><br><span class="line">ln -s /usr/<span class="built_in">local</span>/nodejs/bin/node /usr/<span class="built_in">local</span>/bin</span><br><span class="line">ln -s /usr/<span class="built_in">local</span>/nodejs/bin/npm /usr/<span class="built_in">local</span>/bin</span><br><span class="line"></span><br><span class="line">设置配置文件</span><br><span class="line">nano /etc/profile</span><br><span class="line"><span class="built_in">source</span> /etc/profile</span><br></pre></td></tr></table></figure>
-
-<h2 id="三-测试"><a href="#三-测试" class="headerlink" title="三 测试"></a>三 测试</h2><p>node -V</p>
-<h2 id="四-node命令简介"><a href="#四-node命令简介" class="headerlink" title="四 node命令简介"></a>四 node命令简介</h2><p>npm install -g yarn 安装</p>
-<p>npm install -g <a href="mailto:&#110;&#x70;&#x6d;&#x40;&#57;&#46;&#49;&#46;&#x32;">&#110;&#x70;&#x6d;&#x40;&#57;&#46;&#49;&#46;&#x32;</a> 安装指定版本</p>
-<h2 id="五-安装-Node应用的进程管理器（自选）"><a href="#五-安装-Node应用的进程管理器（自选）" class="headerlink" title="五 安装 Node应用的进程管理器（自选）."></a>五 安装 Node应用的进程管理器（自选）.</h2><p>pm2 是一个带有负载均衡功能的Node应用的进程管理器. </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">npm install -g pm2</span><br><span class="line"><span class="comment">#建立系统命令</span></span><br><span class="line">ln -s /path_to&#123;****&#125;l/node/bin/pm2 /usr/<span class="built_in">local</span>/bin/pm2</span><br><span class="line"><span class="comment">#启动node项目</span></span><br><span class="line">pm2 start  xxx/app.js</span><br><span class="line"><span class="comment">#重启程序</span></span><br><span class="line">pm2 restart xxx/app.js</span><br><span class="line"><span class="comment">#关闭程序</span></span><br><span class="line">pm2 stop xxx/app.js</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022-11/install-nodejs.html">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <!-- 默认的目录
-        
-        -->
-    </div>
-</aside>
-
-
-
-  
-    <article id="post-Python3-threading-queue" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022-06/Python3-threading-queue.html">Python3 多线程+队列实现并发</a>
-    </h1>
-  
-
-        
-        <a href="/2022-06/Python3-threading-queue.html" class="archive-article-date">
-  	<time datetime="2022-06-20T12:59:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-20</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-keyboard-o"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">143字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="fa fa-hourglass-half"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">1分</span>
-    </span>
-  </span>
-</div>
-          
-        <!-- 添加字数统计完成 -->
-
-        
-      </header>
-    
-    
-    <!-- 目录内容 -->
-    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
-    
-    <!-- 目录内容结束 -->
-
-
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>并发的实现有多种方式，本文仅给出多线程+队列的一个简单示例。</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> queue</span><br><span class="line"><span class="keyword">import</span> threading</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 创建一个队列对象，把数组值放进去</span></span><br><span class="line">q = queue.Queue(maxsize=<span class="number">4000</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>):</span><br><span class="line">    q.put(i)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 定义实际操作</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">do_something</span>(<span class="params">i</span>):</span></span><br><span class="line">    <span class="built_in">print</span>(i)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 从队列中取出值，并调用实际操作</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">queue</span>):</span></span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">not</span> queue.empty():</span><br><span class="line">        i = queue.get()</span><br><span class="line">        do_something(i)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 起10个线程，线程target去执行从队列中取值并进行操作的动作</span></span><br><span class="line">threads = []</span><br><span class="line"><span class="keyword">for</span> t <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">    thread = threading.Thread(target=f, args=(q,))</span><br><span class="line">    threads.append(thread)</span><br><span class="line">    thread.start()</span><br><span class="line"> </span><br><span class="line"><span class="keyword">for</span> t <span class="keyword">in</span> threads:</span><br><span class="line">    t.join()</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022-06/Python3-threading-queue.html">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <!-- 默认的目录
-        
-        -->
-    </div>
-</aside>
-
-
-
-  
-    <article id="post-mongodb-notes" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022-05/mongodb-notes.html">MongoDB笔记</a>
-    </h1>
-  
-
-        
-        <a href="/2022-05/mongodb-notes.html" class="archive-article-date">
-  	<time datetime="2022-05-14T13:21:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-14</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-keyboard-o"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">103字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="fa fa-hourglass-half"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">1分</span>
-    </span>
-  </span>
-</div>
-          
-        <!-- 添加字数统计完成 -->
-
-        
-      </header>
-    
-    
-    <!-- 目录内容 -->
-    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
-    
-    <!-- 目录内容结束 -->
-
-
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43626378/article/details/108430713">https://blog.csdn.net/qq_43626378/article/details/108430713</a></p>
-<h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2><p>systemctl start mongod.service</p>
-<h2 id="添加数据库管理员"><a href="#添加数据库管理员" class="headerlink" title="添加数据库管理员"></a>添加数据库管理员</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/hecr_mingong/article/details/109724758">https://blog.csdn.net/hecr_mingong/article/details/109724758</a></p>
-<p>1.关闭服务</p>
-<p>systemctl stop mongod.service</p>
-<ol start="2">
-<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">mongo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建超级用户</span></span><br><span class="line">use admin</span><br><span class="line">db.createUser(&#123;user:<span class="string">&quot;admin&quot;</span>,<span class="built_in">pwd</span>:<span class="string">&quot;password&quot;</span>,roles:[<span class="string">&quot;root&quot;</span>]&#125;)</span><br><span class="line">db.auth(<span class="string">&#x27;admin&#x27;</span>,<span class="string">&#x27;password&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换至需要做登录的集合</span></span><br><span class="line">use your_database</span><br><span class="line">db.createUser(&#123;user:<span class="string">&#x27;user&#x27;</span>,<span class="built_in">pwd</span>:<span class="string">&#x27;password&#x27;</span>,roles:[<span class="string">&#x27;dbOwner&#x27;</span>]&#125;)</span><br></pre></td></tr></table></figure></li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">MongoDB</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022-05/mongodb-notes.html">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <!-- 默认的目录
-        
-        -->
-    </div>
-</aside>
-
-
-
-  
-    <article id="post-python-automation-summary" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022-05/python-automation-summary.html">Python3自动化总结</a>
-    </h1>
-  
-
-        
-        <a href="/2022-05/python-automation-summary.html" class="archive-article-date">
-  	<time datetime="2022-05-11T14:47:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-11</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-keyboard-o"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">146字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="fa fa-hourglass-half"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">1分</span>
-    </span>
-  </span>
-</div>
-          
-        <!-- 添加字数统计完成 -->
-
-        
-      </header>
-    
-    
-    <!-- 目录内容 -->
-    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
-    
-    <!-- 目录内容结束 -->
-
-
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>一、保持cookies</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s=requests.session()</span><br><span class="line">r=s.get(url,params=params)</span><br><span class="line"></span><br><span class="line">r=s.post(...)</span><br></pre></td></tr></table></figure>
-
-<p>二、更新headers</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hds=&#123;</span><br><span class="line">    <span class="string">&#x27;User-Agent&#x27;</span>:<span class="string">&#x27;android&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Referer&#x27;</span>:<span class="string">&#x27;http://xxx.cn/login.do&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Host&#x27;</span>:<span class="string">&#x27;passport.enaea.edu.cn&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Connection&#x27;</span>:<span class="string">&#x27;Keep-Alive&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Accept-Encoding&#x27;</span>:<span class="string">&#x27;gzip&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line">s.headers.update(hds)</span><br></pre></td></tr></table></figure>
-
-<p>三 删除cookies 增加cookies</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 删除cookies</span></span><br><span class="line">s.cookies.<span class="built_in">set</span>(<span class="string">&#x27;376b0df3-db18-4598-818b-50eea7228f6e&#x27;</span>,<span class="literal">None</span>)</span><br><span class="line"><span class="comment"># 增加cookies</span></span><br><span class="line">s.cookies.<span class="built_in">set</span>(<span class="string">&#x27;SCFUCKP_5558730&#x27;</span>,<span class="string">&#x27;a12e8549-55bc-4a9e-85b9-d306e1ced8e3&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>四、将cookies转化成字典，然后打印出来</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s=requests.session()</span><br><span class="line">cookies_dict = requests.utils.dict_from_cookiejar(s.cookies)</span><br><span class="line">logging.info(cookies_dict)</span><br></pre></td></tr></table></figure>
-
-<p>Python3自动化的时候，时刻要注意cookies是否正确</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Automation</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Python//" class="article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Python/Automation//" class="article-tag-list-link color1">Automation</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022-05/python-automation-summary.html">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <!-- 默认的目录
-        
-        -->
-    </div>
-</aside>
-
-
-
-  
-    <article id="post-vue-jinja2-symbolic-conflicts" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022-04/vue-jinja2-symbolic-conflicts.html">解决jinja和vue符号相同冲突</a>
-    </h1>
-  
-
-        
-        <a href="/2022-04/vue-jinja2-symbolic-conflicts.html" class="archive-article-date">
-  	<time datetime="2022-04-20T23:59:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-21</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-keyboard-o"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">125字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="fa fa-hourglass-half"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">1分</span>
-    </span>
-  </span>
-</div>
-          
-        <!-- 添加字数统计完成 -->
-
-        
-      </header>
-    
-    
-    <!-- 目录内容 -->
-    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
-    
-    <!-- 目录内容结束 -->
-
-
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>jinja和vue在使用的时候都是使用<code>&#123;&#123;&#125;&#125;</code>进行数据绑定，但是当vue和jinja同时使用的时候，就会出现冲突。</p>
+        <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/pmdream/article/details/112991683">https://blog.csdn.net/pmdream/article/details/112991683</a></p>
+<p><strong>因为我想做的是:更新操作，主键不要更新</strong></p>
+<blockquote>
+<p>innodb_autoinc_lock_mode中有3种模式,0,1,2，数据库默认是1的情况下,每次使用insert into … on duplicate key update 的时候都会把简单自增id增加,不管是发生了insert还是update</p>
 </blockquote>
         
-          <a class="article-more-a" href="/2022-04/vue-jinja2-symbolic-conflicts.html#more">more >></a>
+          <a class="article-more-a" href="/2022-02/innodb-autoinc.html#more">more >></a>
         
       
 
@@ -1166,15 +691,15 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">VUE</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">FLASK</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">MariaDB</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JINJA</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">innodb_autoinc_lock_mode</a>
         		</li>
       		
 		</ul>
@@ -1195,7 +720,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2022-04/vue-jinja2-symbolic-conflicts.html">展开全文 >></a>
+          <a class="article-more-a" href="/2022-02/innodb-autoinc.html">展开全文 >></a>
         </p>
       
 
@@ -1228,20 +753,20 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-charles-setting" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-mqtt-client" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022-04/charles-setting.html">Charles设置问题集锦</a>
+      <a class="article-title" href="/2022-02/mqtt-client.html">MQTT客户端信息</a>
     </h1>
   
 
         
-        <a href="/2022-04/charles-setting.html" class="archive-article-date">
-  	<time datetime="2022-04-13T01:07:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-13</time>
+        <a href="/2022-02/mqtt-client.html" class="archive-article-date">
+  	<time datetime="2022-02-07T07:12:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-07</time>
 </a>
         
         <!-- 开始添加字数统计-->
@@ -1251,7 +776,673 @@ var _hmt = _hmt || [];
     <span class="post-meta-item-icon">
       <i class="fa fa-keyboard-o"></i>
       <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">575字</span>
+      <span class="post-count" style="font-size: 16px;color: grey">644字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="fa fa-hourglass-half"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">3分</span>
+    </span>
+  </span>
+</div>
+          
+        <!-- 添加字数统计完成 -->
+
+        
+      </header>
+    
+    
+    <!-- 目录内容 -->
+    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
+    
+    <!-- 目录内容结束 -->
+
+
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>保存客户端的信息，用来显示客户端的状态、实时值</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2022-02/mqtt-client.html#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">EMQX</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">MQTT</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">CLIENT</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/软件教程//" class="article-tag-list-link color5">软件教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022-02/mqtt-client.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <!-- 默认的目录
+        
+        -->
+    </div>
+</aside>
+
+
+
+  
+    <article id="post-my-emqx-nginx-proxy" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022-02/my-emqx-nginx-proxy.html">用nginx将wss转化成了ws[EMQX教程](原创)</a>
+    </h1>
+  
+
+        
+        <a href="/2022-02/my-emqx-nginx-proxy.html" class="archive-article-date">
+  	<time datetime="2022-02-07T03:07:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-07</time>
+</a>
+        
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-keyboard-o"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">383字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="fa fa-hourglass-half"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">1分</span>
+    </span>
+  </span>
+</div>
+          
+        <!-- 添加字数统计完成 -->
+
+        
+      </header>
+    
+    
+    <!-- 目录内容 -->
+    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
+    
+    <!-- 目录内容结束 -->
+
+
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>EMQ配置通过nginx反向代理wss</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2022-02/my-emqx-nginx-proxy.html#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SSL</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">EMQX</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">MQTT</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">PROXY</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">WSS</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">WebSocket</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/软件教程//" class="article-tag-list-link color5">软件教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022-02/my-emqx-nginx-proxy.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <!-- 默认的目录
+        
+        -->
+    </div>
+</aside>
+
+
+
+  
+    <article id="post-emqx-nginx-proxy" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022-02/emqx-nginx-proxy.html">Nginx TCP/SSL 反向代理设置(转载)</a>
+    </h1>
+  
+
+        
+        <a href="/2022-02/emqx-nginx-proxy.html" class="archive-article-date">
+  	<time datetime="2022-02-07T02:49:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-07</time>
+</a>
+        
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-keyboard-o"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">566字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="fa fa-hourglass-half"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">2分</span>
+    </span>
+  </span>
+</div>
+          
+        <!-- 添加字数统计完成 -->
+
+        
+      </header>
+    
+    
+    <!-- 目录内容 -->
+    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
+    
+    <!-- 目录内容结束 -->
+
+
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>很多使用 EMQ X 消息服务器的童鞋，会发现随着业务量的增长会考虑到 EMQ X 节点的扩容，多节点之后，如果节点前没有挂载代理，就需要在客户端指定连接哪台 EMQ X 节点，如果其中一台节点升级，还需要在客户端重新做设置，但如果在集群节点挂载反向代理，就可以通过反向代理将连接分配到另外节点上，从而避免在客户端的更改和重新部署。So，今天就聊聊 Nginx 反向代理的事吧!</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2022-02/emqx-nginx-proxy.html#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">EMQX</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">MQTT</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">PROXY</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Linux教程//" class="article-tag-list-link color3">Linux教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022-02/emqx-nginx-proxy.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <!-- 默认的目录
+        
+        -->
+    </div>
+</aside>
+
+
+
+  
+    <article id="post-emqx-wss" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022-02/emqx-wss.html">EMQX4.3.5社区版开启WSS</a>
+    </h1>
+  
+
+        
+        <a href="/2022-02/emqx-wss.html" class="archive-article-date">
+  	<time datetime="2022-02-06T13:44:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-06</time>
+</a>
+        
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-keyboard-o"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">207字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="fa fa-hourglass-half"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">1分</span>
+    </span>
+  </span>
+</div>
+          
+        <!-- 添加字数统计完成 -->
+
+        
+      </header>
+    
+    
+    <!-- 目录内容 -->
+    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
+    
+    <!-- 目录内容结束 -->
+
+
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><p>在EMQX Dashboard不能使用WSS连接，如下图所示：</p>
+        
+          <a class="article-more-a" href="/2022-02/emqx-wss.html#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">EMQX</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">MQTT</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">WSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/软件教程//" class="article-tag-list-link color5">软件教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022-02/emqx-wss.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <!-- 默认的目录
+        
+        -->
+    </div>
+</aside>
+
+
+
+  
+    <article id="post-emqx" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022-02/emqx.html">EMQ X(MQTT消息服务器)教程</a>
+    </h1>
+  
+
+        
+        <a href="/2022-02/emqx.html" class="archive-article-date">
+  	<time datetime="2022-02-04T13:17:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-04</time>
+</a>
+        
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-keyboard-o"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">598字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="fa fa-hourglass-half"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">3分</span>
+    </span>
+  </span>
+</div>
+          
+        <!-- 添加字数统计完成 -->
+
+        
+      </header>
+    
+    
+    <!-- 目录内容 -->
+    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
+    
+    <!-- 目录内容结束 -->
+
+
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>EMQ X 是一款完全开源，高度可伸缩，高可用的分布式 MQTT 消息服务器，适用于 IoT、M2M 和移动应用程序，可处理千万级别的并发客户端。</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2022-02/emqx.html#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">EMQX</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">MQTT</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/软件教程//" class="article-tag-list-link color5">软件教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022-02/emqx.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <!-- 默认的目录
+        
+        -->
+    </div>
+</aside>
+
+
+
+  
+    <article id="post-xiaomi-max2-root" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022-01/xiaomi-max2-root.html">小米max2开启root</a>
+    </h1>
+  
+
+        
+        <a href="/2022-01/xiaomi-max2-root.html" class="archive-article-date">
+  	<time datetime="2022-01-26T04:01:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-26</time>
+</a>
+        
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-keyboard-o"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">599字</span>
     </span>
   </span>
 
@@ -1281,10 +1472,10 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>一、安卓7以上charles设置https抓包<br>二、错误提示:Not allowed - connection dropped</p>
+<p>1.开启开发者模式;2.解锁Bootloader;3.开启ROOT.</p>
 </blockquote>
         
-          <a class="article-more-a" href="/2022-04/charles-setting.html#more">more >></a>
+          <a class="article-more-a" href="/2022-01/xiaomi-max2-root.html#more">more >></a>
         
       
 
@@ -1298,160 +1489,32 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SSL</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Max2</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">CHARLES</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">HTTPS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">安卓</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Root</a>
         		</li>
       		
 		</ul>
 	</div>
 
       
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022-04/charles-setting.html">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <!-- 默认的目录
-        
-        -->
-    </div>
-</aside>
-
-
-
-  
-    <article id="post-html5-css3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022-03/html5-css3.html">html5_css3前端笔记</a>
-    </h1>
-  
-
-        
-        <a href="/2022-03/html5-css3.html" class="archive-article-date">
-  	<time datetime="2022-03-31T02:57:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-31</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-keyboard-o"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">520字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="fa fa-hourglass-half"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">1分</span>
-    </span>
-  </span>
-</div>
-          
-        <!-- 添加字数统计完成 -->
-
-        
-      </header>
-    
-    
-    <!-- 目录内容 -->
-    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
-    
-    <!-- 目录内容结束 -->
-
-
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="隐藏元素-display-none或visibility-hidden"><a href="#隐藏元素-display-none或visibility-hidden" class="headerlink" title="隐藏元素 - display:none或visibility:hidden"></a>隐藏元素 - display:none或visibility:hidden</h2><p>隐藏一个元素可以通过把display属性设置为”none”，或把visibility属性设置为”hidden”。但是请注意，这两种方法会产生不同的结果。</p>
-<p>visibility:hidden可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。也就是说，该元素虽然被隐藏了，但仍然会影响布局。</p>
-<p>display:none可以隐藏某个元素，且隐藏的元素不会占用任何空间。也就是说，该元素不但被隐藏了，而且该元素原本占用的空间也会从页面布局中消失。</p>
-<h4 id="CSS-Display-块和内联元素"><a href="#CSS-Display-块和内联元素" class="headerlink" title="CSS Display - 块和内联元素"></a>CSS Display - 块和内联元素</h4><p>注意：变更元素的显示类型看该元素是如何显示，它是什么样的元素。例如：一个内联元素设置为display:block是不允许有它内部的嵌套块元素。</p>
-<h2 id="CSS-Position-定位"><a href="#CSS-Position-定位" class="headerlink" title="CSS Position(定位)"></a>CSS Position(定位)</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-class">.pos_fixed</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="attribute">position</span>:fixed;</span><br><span class="line">    <span class="attribute">top</span>:<span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">right</span>:<span class="number">5px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Fixed 定位在 IE7 和 IE8 下需要描述 !DOCTYPE 才能支持。</p>
-<p>Fixed定位使元素的位置与文档流无关，因此不占据空间。</p>
-<p>Fixed定位的元素和其他元素重叠。</p>
-<h2 id="CSS-伪类"><a href="#CSS-伪类" class="headerlink" title="CSS 伪类"></a>CSS 伪类</h2><p>注意： 在CSS定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。</p>
-<p>注意： 在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。</p>
-<p>注意：伪类的名称不区分大小写。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> &#123;<span class="attribute">color</span>:<span class="number">#FF0000</span>;&#125; <span class="comment">/* 未访问的链接 */</span></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> &#123;<span class="attribute">color</span>:<span class="number">#00FF00</span>;&#125; <span class="comment">/* 已访问的链接 */</span></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;<span class="attribute">color</span>:<span class="number">#FF00FF</span>;&#125; <span class="comment">/* 鼠标划过链接 */</span></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;<span class="attribute">color</span>:<span class="number">#0000FF</span>;&#125; <span class="comment">/* 已选中的链接 */</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="height-100-设置div的高度"><a href="#height-100-设置div的高度" class="headerlink" title="height:100%设置div的高度"></a>height:100%设置div的高度</h2><p>要实现最外层div高度为100%（百分之百），关键对html和body要设置高度100%,如果只设置html和body标签其中一个高100%，也是无法实现body内第一个盒子高度100%的。但犹豫body默认有一定margin值，但设置body高度height 100%后，浏览器就会出现滚动条，所以可以对body设置margin为零，去除间距实现div height 100%也无滚动条效果。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">HTML5</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">CSS3</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">FRONTEND</a>
+        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2022-03/html5-css3.html">展开全文 >></a>
+          <a class="article-more-a" href="/2022-01/xiaomi-max2-root.html">展开全文 >></a>
         </p>
       
 
@@ -1681,18 +1744,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">EMQX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">MQTT</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PROXY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">div</a>
               </li>
              
@@ -1702,6 +1753,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">EMQX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">MQTT</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">PROXY</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1789,19 +1852,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Blog</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Golang</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Proxy</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1829,6 +1892,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Software</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">vscode</a>
               </li>
              
@@ -1838,10 +1905,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">annotation</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Software</a>
               </li>
              
               <li class="article-tag-list-item">
