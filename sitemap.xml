@@ -16,14 +16,14 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/about/index.html</loc>
+    <loc>http://blog.5uks.net/categories/index.html</loc>
     
     <lastmod>2023-09-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/categories/index.html</loc>
+    <loc>http://blog.5uks.net/about/index.html</loc>
     
     <lastmod>2023-09-04</lastmod>
     
@@ -529,27 +529,6 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/tags/%E9%92%89%E9%92%89/</loc>
-    <lastmod>2023-09-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
-    <lastmod>2023-09-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/Python/</loc>
-    <lastmod>2023-09-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.5uks.net/tags/div/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>daily</changefreq>
@@ -565,6 +544,27 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/Html/</loc>
+    <lastmod>2023-09-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/%E9%92%89%E9%92%89/</loc>
+    <lastmod>2023-09-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
+    <lastmod>2023-09-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/Python/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -690,6 +690,20 @@
   </url>
   
   <url>
+    <loc>http://blog.5uks.net/tags/Windows/</loc>
+    <lastmod>2023-09-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/Gitbook/</loc>
+    <lastmod>2023-09-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.5uks.net/tags/git/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>daily</changefreq>
@@ -705,20 +719,6 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/CRLF/</loc>
-    <lastmod>2023-09-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/Windows/</loc>
-    <lastmod>2023-09-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/Gitbook/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -956,6 +956,13 @@
   </url>
   
   <url>
+    <loc>http://blog.5uks.net/tags/Extension/</loc>
+    <lastmod>2023-09-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.5uks.net/tags/VUE/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>daily</changefreq>
@@ -971,13 +978,6 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/JINJA/</loc>
-    <lastmod>2023-09-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/Extension/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
