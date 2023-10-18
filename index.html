@@ -83,7 +83,7 @@ var _hmt = _hmt || [];
 
 		
 		<div class="blog-counter">
-			<p>总文章数:53</p>
+			<p>总文章数:54</p>
 		</div>
 		
 
@@ -229,6 +229,108 @@ var _hmt = _hmt || [];
                   </div>
                   <div id="js-content" class="content-ll">
                     
+  
+    <article id="post-install-electron-error" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023-10/install-electron-error.html">解决npm安装electron总失败的问题</a>
+    </h1>
+  
+
+        
+        <a href="/2023-10/install-electron-error.html" class="archive-article-date">
+  	<time datetime="2023-10-18T08:33:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-10-18</time>
+</a>
+        
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-keyboard-o"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">240字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="fa fa-hourglass-half"></i>
+      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+      <span class="post-count" style="font-size: 16px;color: grey">1分</span>
+    </span>
+  </span>
+</div>
+          
+        <!-- 添加字数统计完成 -->
+
+        
+      </header>
+    
+    
+    <!-- 目录内容 -->
+    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
+    
+    <!-- 目录内容结束 -->
+
+
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="总述解决办法"><a href="#总述解决办法" class="headerlink" title="总述解决办法"></a>总述解决办法</h1><h2 id="先运行"><a href="#先运行" class="headerlink" title="先运行"></a>先运行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npmmirror.com</span><br></pre></td></tr></table></figure>
+
+<h2 id="再运行"><a href="#再运行" class="headerlink" title="再运行"></a>再运行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save-dev electron</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">add electron --save-dev --registry=https:/registry.npm.taobao.org</span><br><span class="line">npm ERR! code 1</span><br><span class="line">npm ERR! path C:\Users\xxxxxxxxx\app\node_modules\electron</span><br><span class="line">npm ERR! command failed</span><br><span class="line">npm ERR! command C:\windows\system32\cmd.exe /d /s /c node install.js</span><br><span class="line">npm ERR! RequestError: unable to verify the first certificate</span><br><span class="line">npm ERR!     at ClientRequest.&lt;anonymous&gt; (C:\Users\xxxxxxxxx\app\node_modules\got\dist\source\core\index.js:970:111)</span><br><span class="line">npm ERR!     at Object.onceWrapper (node:events:628:26)</span><br><span class="line">npm ERR!     at ClientRequest.emit (node:events:525:35)</span><br><span class="line">npm ERR!     at origin.emit (C:\Users\xxxxxxxxx\app\node_modules\@szarczak\http-timer\dist\source\index.js:43:20)</span><br><span class="line">npm ERR!     at TLSSocket.socketErrorListener (node:_http_client:502:9)</span><br><span class="line">npm ERR!     at TLSSocket.emit (node:events:513:28)</span><br><span class="line">npm ERR!     at emitErrorNT (node:internal/streams/destroy:151:8)</span><br><span class="line">npm ERR!     at emitErrorCloseNT (node:internal/streams/destroy:116:3)</span><br><span class="line">npm ERR!     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)</span><br><span class="line">npm ERR!     at TLSSocket.onConnectSecure (node:_tls_wrap:1540:34)</span><br><span class="line">npm ERR!     at TLSSocket.emit (node:events:513:28)</span><br><span class="line">npm ERR!     at TLSSocket._finishInit (node:_tls_wrap:959:8)</span><br><span class="line">npm ERR!     at ssl.onhandshakedone (node:_tls_wrap:743:12)</span><br><span class="line"></span><br><span class="line">npm ERR! A complete log of this run can be found in:</span><br><span class="line">npm ERR!     C:\Users\xxxxxxxxx\AppData\Local\npm-cache\_logs\2023-10-18T08_03_12_856Z-debug-0.log</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2023-10/install-electron-error.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <!-- 默认的目录
+        
+        -->
+    </div>
+</aside>
+
+
+
   
     <article id="post-ubuntu-install-nodejs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -902,7 +1004,7 @@ var _hmt = _hmt || [];
 
 <h2 id="三-测试"><a href="#三-测试" class="headerlink" title="三 测试"></a>三 测试</h2><p>node -V</p>
 <h2 id="四-node命令简介"><a href="#四-node命令简介" class="headerlink" title="四 node命令简介"></a>四 node命令简介</h2><p>npm install -g yarn 安装</p>
-<p>npm install -g <a href="mailto:&#x6e;&#x70;&#x6d;&#x40;&#57;&#46;&#x31;&#x2e;&#x32;">&#x6e;&#x70;&#x6d;&#x40;&#57;&#46;&#x31;&#x2e;&#x32;</a> 安装指定版本</p>
+<p>npm install -g <a href="mailto:&#x6e;&#x70;&#109;&#x40;&#x39;&#46;&#49;&#x2e;&#x32;">&#x6e;&#x70;&#109;&#x40;&#x39;&#46;&#49;&#x2e;&#x32;</a> 安装指定版本</p>
 <h2 id="五-安装-Node应用的进程管理器（自选）"><a href="#五-安装-Node应用的进程管理器（自选）" class="headerlink" title="五 安装 Node应用的进程管理器（自选）."></a>五 安装 Node应用的进程管理器（自选）.</h2><p>pm2 是一个带有负载均衡功能的Node应用的进程管理器. </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">npm install -g pm2</span><br><span class="line"><span class="comment">#建立系统命令</span></span><br><span class="line">ln -s /path_to&#123;****&#125;l/node/bin/pm2 /usr/<span class="built_in">local</span>/bin/pm2</span><br><span class="line"><span class="comment">#启动node项目</span></span><br><span class="line">pm2 start  xxx/app.js</span><br><span class="line"><span class="comment">#重启程序</span></span><br><span class="line">pm2 restart xxx/app.js</span><br><span class="line"><span class="comment">#关闭程序</span></span><br><span class="line">pm2 stop xxx/app.js</span><br></pre></td></tr></table></figure>
       
@@ -1305,138 +1407,6 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-vue-jinja2-symbolic-conflicts" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022-04/vue-jinja2-symbolic-conflicts.html">解决jinja和vue符号相同冲突</a>
-    </h1>
-  
-
-        
-        <a href="/2022-04/vue-jinja2-symbolic-conflicts.html" class="archive-article-date">
-  	<time datetime="2022-04-20T23:59:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-21</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-keyboard-o"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">125字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="fa fa-hourglass-half"></i>
-      <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">1分</span>
-    </span>
-  </span>
-</div>
-          
-        <!-- 添加字数统计完成 -->
-
-        
-      </header>
-    
-    
-    <!-- 目录内容 -->
-    <script src="/assets/js/isMobile.js"></script>  <!-- 引入检测移动设备的JS文件 -->
-    
-    <!-- 目录内容结束 -->
-
-
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>jinja和vue在使用的时候都是使用<code>&#123;&#123;&#125;&#125;</code>进行数据绑定，但是当vue和jinja同时使用的时候，就会出现冲突。</p>
-</blockquote>
-        
-          <a class="article-more-a" href="/2022-04/vue-jinja2-symbolic-conflicts.html#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">VUE</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">FLASK</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JINJA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/软件教程//" class="article-tag-list-link color5">软件教程</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022-04/vue-jinja2-symbolic-conflicts.html">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <!-- 默认的目录
-        
-        -->
-    </div>
-</aside>
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
@@ -1686,22 +1656,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">LF</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">CRLF</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">锐捷网络</a>
               </li>
              
@@ -1723,6 +1677,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">预告</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">LF</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">CRLF</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1838,19 +1808,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">权限</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">sudoers</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">sudo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">shell</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">权限</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">sudoers</a>
               </li>
              
               <li class="article-tag-list-item">
