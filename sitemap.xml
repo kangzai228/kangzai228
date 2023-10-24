@@ -37,14 +37,14 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/categories/index.html</loc>
+    <loc>http://blog.5uks.net/about/index.html</loc>
     
     <lastmod>2023-09-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/about/index.html</loc>
+    <loc>http://blog.5uks.net/categories/index.html</loc>
     
     <lastmod>2023-09-04</lastmod>
     
@@ -592,13 +592,6 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/tags/EMQX/</loc>
-    <lastmod>2023-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.5uks.net/tags/MQTT/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
@@ -606,7 +599,7 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/tags/PROXY/</loc>
+    <loc>http://blog.5uks.net/tags/EMQX/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -620,6 +613,13 @@
   </url>
   
   <url>
+    <loc>http://blog.5uks.net/tags/PROXY/</loc>
+    <lastmod>2023-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.5uks.net/tags/ESP8266/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
@@ -627,7 +627,14 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/tags/%E7%83%A7%E5%BD%95%E5%9B%BA%E4%BB%B6/</loc>
+    <loc>http://blog.5uks.net/tags/ESP32/</loc>
+    <lastmod>2023-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/MAC/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -635,6 +642,13 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/Arduino/</loc>
+    <lastmod>2023-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/%E7%83%A7%E5%BD%95%E5%9B%BA%E4%BB%B6/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -684,20 +698,6 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/%E9%A2%84%E5%91%8A/</loc>
-    <lastmod>2023-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/ESP32/</loc>
-    <lastmod>2023-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/MAC/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
