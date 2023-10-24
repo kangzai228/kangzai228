@@ -410,6 +410,20 @@
 
   
   <url>
+    <loc>http://blog.5uks.net/tags/Max2/</loc>
+    <lastmod>2023-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/Root/</loc>
+    <lastmod>2023-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.5uks.net/tags/Docusaurus/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
@@ -592,13 +606,6 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/tags/MQTT/</loc>
-    <lastmod>2023-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.5uks.net/tags/EMQX/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
@@ -606,7 +613,7 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/tags/WSS/</loc>
+    <loc>http://blog.5uks.net/tags/MQTT/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -614,6 +621,13 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/PROXY/</loc>
+    <lastmod>2023-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/WSS/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -662,6 +676,13 @@
   </url>
   
   <url>
+    <loc>http://blog.5uks.net/tags/Github/</loc>
+    <lastmod>2023-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.5uks.net/tags/%E9%94%90%E6%8D%B7%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
@@ -698,13 +719,6 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/%E9%A2%84%E5%91%8A/</loc>
-    <lastmod>2023-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/Github/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1053,20 +1067,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>http://blog.5uks.net/tags/Max2/</loc>
-    <lastmod>2023-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/Root/</loc>
-    <lastmod>2023-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   
   <url>
@@ -1140,14 +1140,14 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/categories/Python/</loc>
+    <loc>http://blog.5uks.net/categories/PHP/MySQL/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/categories/PHP/MySQL/</loc>
+    <loc>http://blog.5uks.net/categories/Python/</loc>
     <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
