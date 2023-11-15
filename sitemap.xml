@@ -515,6 +515,20 @@
   </url>
   
   <url>
+    <loc>http://blog.5uks.net/tags/Max2/</loc>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/Root/</loc>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.5uks.net/tags/code-server/</loc>
     <lastmod>2023-11-15</lastmod>
     <changefreq>daily</changefreq>
@@ -649,20 +663,6 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/WSS/</loc>
-    <lastmod>2023-11-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/MySQL/</loc>
-    <lastmod>2023-11-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/database/</loc>
     <lastmod>2023-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -852,6 +852,13 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/FRONTEND/</loc>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/MySQL/</loc>
     <lastmod>2023-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1096,14 +1103,7 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/tags/Max2/</loc>
-    <lastmod>2023-11-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/Root/</loc>
+    <loc>http://blog.5uks.net/tags/database/</loc>
     <lastmod>2023-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1154,21 +1154,7 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/categories/MySQL/</loc>
-    <lastmod>2023-11-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.5uks.net/categories/%E7%89%A9%E8%81%94%E7%BD%91/</loc>
-    <lastmod>2023-11-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/categories/MySQL/database/</loc>
     <lastmod>2023-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1225,6 +1211,20 @@
   
   <url>
     <loc>http://blog.5uks.net/categories/Windows%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/categories/MySQL/</loc>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/categories/MySQL/database/</loc>
     <lastmod>2023-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
