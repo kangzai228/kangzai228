@@ -445,27 +445,6 @@
 
   
   <url>
-    <loc>http://blog.5uks.net/tags/Windows/</loc>
-    <lastmod>2024-09-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/Python3/</loc>
-    <lastmod>2024-09-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/pip/</loc>
-    <lastmod>2024-09-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.5uks.net/tags/Docusaurus/</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>daily</changefreq>
@@ -488,6 +467,13 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/Spider/</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/Python3/</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -802,6 +788,13 @@
   </url>
   
   <url>
+    <loc>http://blog.5uks.net/tags/Windows/</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.5uks.net/tags/Gitbook/</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>daily</changefreq>
@@ -1033,6 +1026,13 @@
   </url>
   
   <url>
+    <loc>http://blog.5uks.net/tags/pip/</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.5uks.net/tags/sudo/</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>daily</changefreq>
@@ -1154,13 +1154,6 @@
 
   
   <url>
-    <loc>http://blog.5uks.net/categories/Python3/</loc>
-    <lastmod>2024-09-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.5uks.net/categories/Linux/</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>daily</changefreq>
@@ -1175,7 +1168,7 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/categories/Python3/Spider/</loc>
+    <loc>http://blog.5uks.net/categories/Python3/</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1183,6 +1176,13 @@
   
   <url>
     <loc>http://blog.5uks.net/categories/Linux%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/categories/Python3/Spider/</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
