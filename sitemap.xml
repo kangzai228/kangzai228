@@ -72,14 +72,14 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/about/index.html</loc>
+    <loc>http://blog.5uks.net/categories/index.html</loc>
     
     <lastmod>2023-09-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/categories/index.html</loc>
+    <loc>http://blog.5uks.net/about/index.html</loc>
     
     <lastmod>2023-09-04</lastmod>
     
@@ -467,6 +467,20 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/Spider/</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/Max2/</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/Root/</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1132,20 +1146,6 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/database/</loc>
-    <lastmod>2024-09-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/Max2/</loc>
-    <lastmod>2024-09-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/Root/</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
