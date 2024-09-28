@@ -452,27 +452,6 @@
 
   
   <url>
-    <loc>http://blog.5uks.net/tags/VUE/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/FLASK/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/JINJA/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.5uks.net/tags/Docusaurus/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
@@ -585,6 +564,34 @@
   </url>
   
   <url>
+    <loc>http://blog.5uks.net/tags/opencv-python/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/cv2/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/raspberrypi/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/error/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.5uks.net/tags/%E9%92%89%E9%92%89/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
@@ -621,34 +628,6 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/windows/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/opencv-python/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/cv2/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/raspberrypi/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/error/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1110,6 +1089,27 @@
   </url>
   
   <url>
+    <loc>http://blog.5uks.net/tags/VUE/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/FLASK/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/JINJA/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.5uks.net/tags/Vue3/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
@@ -1124,14 +1124,14 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/tags/bat/</loc>
+    <loc>http://blog.5uks.net/tags/API/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/tags/API/</loc>
+    <loc>http://blog.5uks.net/tags/bat/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1161,14 +1161,14 @@
 
   
   <url>
-    <loc>http://blog.5uks.net/categories/%E8%BD%AF%E4%BB%B6%E6%95%99%E7%A8%8B/</loc>
+    <loc>http://blog.5uks.net/categories/Linux/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/categories/Linux/</loc>
+    <loc>http://blog.5uks.net/categories/%E8%BD%AF%E4%BB%B6%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1259,14 +1259,14 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/categories/Windows%E6%95%99%E7%A8%8B/</loc>
+    <loc>http://blog.5uks.net/categories/JavaScript/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/categories/JavaScript/</loc>
+    <loc>http://blog.5uks.net/categories/Windows%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
