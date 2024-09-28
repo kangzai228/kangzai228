@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/categories/index.html</loc>
+    <loc>http://blog.5uks.net/about/index.html</loc>
     
     <lastmod>2023-09-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/about/index.html</loc>
+    <loc>http://blog.5uks.net/categories/index.html</loc>
     
     <lastmod>2023-09-04</lastmod>
     
@@ -851,6 +851,27 @@
   </url>
   
   <url>
+    <loc>http://blog.5uks.net/tags/MySQL/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/MariaDB/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/innodb-autoinc-lock-mode/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.5uks.net/tags/HTML5/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
@@ -880,27 +901,6 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/electron/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/MySQL/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/MariaDB/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/innodb-autoinc-lock-mode/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -942,6 +942,13 @@
   </url>
   
   <url>
+    <loc>http://blog.5uks.net/tags/Software/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.5uks.net/tags/Markdown/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
@@ -950,13 +957,6 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/Image/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/Software/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1019,13 +1019,6 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/tags/pip/</loc>
-    <lastmod>2024-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.5uks.net/tags/JS/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
@@ -1034,6 +1027,13 @@
   
   <url>
     <loc>http://blog.5uks.net/tags/javascript/</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/pip/</loc>
     <lastmod>2024-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
