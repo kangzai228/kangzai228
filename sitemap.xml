@@ -86,14 +86,14 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/about/index.html</loc>
+    <loc>http://blog.5uks.net/categories/index.html</loc>
     
     <lastmod>2023-09-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/categories/index.html</loc>
+    <loc>http://blog.5uks.net/about/index.html</loc>
     
     <lastmod>2023-09-04</lastmod>
     
@@ -457,6 +457,20 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2024-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.5uks.net/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2024-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>http://blog.5uks.net/tags/Docusaurus/</loc>
@@ -1005,20 +1019,6 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2024-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</loc>
-    <lastmod>2024-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.5uks.net/tags/Automation/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>daily</changefreq>
@@ -1168,6 +1168,13 @@
 
   
   <url>
+    <loc>http://blog.5uks.net/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E8%AF%BE%E7%A8%8B/</loc>
+    <lastmod>2024-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.5uks.net/categories/Linux/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>daily</changefreq>
@@ -1238,7 +1245,7 @@
   </url>
   
   <url>
-    <loc>http://blog.5uks.net/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E8%AF%BE%E7%A8%8B/</loc>
+    <loc>http://blog.5uks.net/categories/Python/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1246,13 +1253,6 @@
   
   <url>
     <loc>http://blog.5uks.net/categories/PHP/MySQL/</loc>
-    <lastmod>2024-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.5uks.net/categories/Python/</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
