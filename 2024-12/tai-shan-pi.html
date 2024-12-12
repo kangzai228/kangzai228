@@ -257,7 +257,7 @@ var _hmt = _hmt || [];
     <span class="post-meta-item-icon">
       <i class="fa fa-keyboard-o"></i>
       <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">96字</span>
+      <span class="post-count" style="font-size: 16px;color: grey">100字</span>
     </span>
   </span>
 
@@ -291,7 +291,7 @@ var _hmt = _hmt || [];
 </blockquote>
 <span id="more"></span>
 
-<h2 id="用芯片ch340的usb转ttl调试"><a href="#用芯片ch340的usb转ttl调试" class="headerlink" title="用芯片ch340的usb转ttl调试"></a>用芯片ch340的usb转ttl调试</h2><p><img src="/images/taishanpi_USB-ttl_link.jpg" alt="泰山派debug连接"></p>
+<h2 id="用芯片ch340的usb转ttl调试-VCC不接线"><a href="#用芯片ch340的usb转ttl调试-VCC不接线" class="headerlink" title="用芯片ch340的usb转ttl调试,VCC不接线"></a>用芯片ch340的usb转ttl调试,VCC不接线</h2><p><img src="/images/taishanpi_USB-ttl_link.jpg" alt="泰山派debug连接"></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 联网wifi</span></span><br><span class="line">nmcli device wifi connect <span class="string">&quot;xxx&quot;</span> password <span class="string">&quot;yyy&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装并设置ssh</span></span><br><span class="line">apt update</span><br><span class="line">apt install aptitude</span><br><span class="line"></span><br><span class="line">aptitude install openssh-server</span><br><span class="line">systemctl status ssh</span><br><span class="line">systemctl <span class="built_in">enable</span> ssh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加用户</span></span><br><span class="line">useradd -r -m -s /bin/bash user_name</span><br><span class="line">passwd user_name</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将用户添加到sudoers</span></span><br><span class="line">chmod +x /etc/sudoers</span><br><span class="line">vim /etc/sudoers</span><br><span class="line">chmod -x /etc/sudoers</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置缓存</span></span><br></pre></td></tr></table></figure>
       
 
@@ -690,14 +690,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Windows</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Gitbook</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
@@ -710,6 +702,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Windows</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Gitbook</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Gitee</a>
               </li>
              
@@ -718,19 +718,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Blog</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Golang</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Proxy</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -802,6 +802,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CLIENT</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
               </li>
              
@@ -811,10 +815,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">PHP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CLIENT</a>
               </li>
              
               <li class="article-tag-list-item">
