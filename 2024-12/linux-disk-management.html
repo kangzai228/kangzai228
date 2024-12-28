@@ -6,21 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://blog.5uks.net">
-  <title>windows系统下MySQL忘记密码,怎么办? | 飞鹰的博客</title>
+  <title>linux disk management | 飞鹰的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="启动mysql服务器的方法方法一:安装过MySQL的电脑,运行net start mysql 方法二:进入MySQL安装目录,再进入子目录bin,然后运行mysqld --console 忘记root账号密码的时候,修改root密码的方法:1.打开一个cmd命令，这里记录下叫窗体1 2.以下操作 1234567# 停止mysql服务net stop mysql# 进入MySQL的bin文件夹cd">
+  <meta name="description" content="查看存在的硬盘以及装载情况1lsblk  装载ntfs分区1234sudo apt updatesudo apt install ntfs-3gmidkr &#x2F;mnt&#x2F;file1mount -t ntfs-3g &#x2F;dev&#x2F;sdbX &#x2F;mnt&#x2F;file1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="windows系统下MySQL忘记密码,怎么办?">
-<meta property="og:url" content="http://blog.5uks.net/2023-11/windows-mysql-forget-password.html">
+<meta property="og:title" content="linux disk management">
+<meta property="og:url" content="http://blog.5uks.net/2024-12/linux-disk-management.html">
 <meta property="og:site_name" content="飞鹰的博客">
-<meta property="og:description" content="启动mysql服务器的方法方法一:安装过MySQL的电脑,运行net start mysql 方法二:进入MySQL安装目录,再进入子目录bin,然后运行mysqld --console 忘记root账号密码的时候,修改root密码的方法:1.打开一个cmd命令，这里记录下叫窗体1 2.以下操作 1234567# 停止mysql服务net stop mysql# 进入MySQL的bin文件夹cd">
+<meta property="og:description" content="查看存在的硬盘以及装载情况1lsblk  装载ntfs分区1234sudo apt updatesudo apt install ntfs-3gmidkr &#x2F;mnt&#x2F;file1mount -t ntfs-3g &#x2F;dev&#x2F;sdbX &#x2F;mnt&#x2F;file1">
 <meta property="og:locale">
-<meta property="article:published_time" content="2023-11-13T10:21:40.000Z">
-<meta property="article:modified_time" content="2023-11-13T10:21:40.000Z">
+<meta property="article:published_time" content="2024-12-28T02:49:43.000Z">
+<meta property="article:modified_time" content="2024-12-28T02:49:43.000Z">
 <meta property="article:author" content="kangzai228">
-<meta property="article:tag" content="windows">
-<meta property="article:tag" content="MySQL">
-<meta property="article:tag" content="database">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="飞鹰的博客" type="application/atom+xml">
@@ -235,20 +232,20 @@ var _hmt = _hmt || [];
                       class="anm-canvas"></canvas>
                   </div>
                   <div id="js-content" class="content-ll">
-                    <article id="post-windows-mysql-forget-password" class="article article-type-post " itemscope itemprop="blogPost">
+                    <article id="post-linux-disk-management" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      windows系统下MySQL忘记密码,怎么办?
+      linux disk management
     </h1>
   
 
         
-        <a href="/2023-11/windows-mysql-forget-password.html" class="archive-article-date">
-  	<time datetime="2023-11-13T10:21:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-11-13</time>
+        <a href="/2024-12/linux-disk-management.html" class="archive-article-date">
+  	<time datetime="2024-12-28T02:49:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-12-28</time>
 </a>
         
         <!-- 开始添加字数统计-->
@@ -258,7 +255,7 @@ var _hmt = _hmt || [];
     <span class="post-meta-item-icon">
       <i class="fa fa-keyboard-o"></i>
       <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-      <span class="post-count" style="font-size: 16px;color: grey">251字</span>
+      <span class="post-count" style="font-size: 16px;color: grey">34字</span>
     </span>
   </span>
 
@@ -287,20 +284,9 @@ var _hmt = _hmt || [];
 
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="启动mysql服务器的方法"><a href="#启动mysql服务器的方法" class="headerlink" title="启动mysql服务器的方法"></a>启动mysql服务器的方法</h2><p>方法一:安装过MySQL的电脑,运行<code>net start mysql</code></p>
-<p>方法二:进入MySQL安装目录,再进入子目录bin,然后运行<code>mysqld --console</code></p>
-<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="忘记root账号密码的时候-修改root密码的方法"><a href="#忘记root账号密码的时候-修改root密码的方法" class="headerlink" title="忘记root账号密码的时候,修改root密码的方法:"></a>忘记root账号密码的时候,修改root密码的方法:</h2><p>1.打开一个cmd命令，这里记录下叫窗体1</p>
-<p>2.以下操作</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 停止mysql服务</span></span><br><span class="line">net stop mysql</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入MySQL的bin文件夹</span></span><br><span class="line"><span class="built_in">cd</span> C:\Program Files\MySQL\MySQL Server 8.0\bin</span><br><span class="line"></span><br><span class="line">mysqld --console --skip-grant-tables --shared-memory</span><br></pre></td></tr></table></figure>
+        <h2 id="查看存在的硬盘以及装载情况"><a href="#查看存在的硬盘以及装载情况" class="headerlink" title="查看存在的硬盘以及装载情况"></a>查看存在的硬盘以及装载情况</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsblk</span><br></pre></td></tr></table></figure>
 
-<p>3.再打开个cmd命令，窗体2</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> C:\Program Files\MySQL\MySQL Server 8.0\bin</span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br><span class="line">//不输入密码直接回车</span><br><span class="line"></span><br><span class="line">use mysql</span><br><span class="line">update user <span class="built_in">set</span> authentication_string=password(<span class="string">&quot;root2023&quot;</span>)  <span class="built_in">where</span> user=<span class="string">&#x27;root&#x27;</span>;</span><br><span class="line">quit</span><br></pre></td></tr></table></figure>
-
-<p>直接关闭窗体1,账号root的密码设置成今年最流行的root2023了</p>
-<p>1.打开一个cmd窗口,进入mysql安装目录下的bin文件夹,运行<code>mysqld --console</code>启动mysql服务.</p>
-<p>2.打开文件<code>my.ini</code>查看信息,比如端口.</p>
-<p>3.使用windows下MySQL客户端登录MySQL.</p>
-<p>参考<code>https://www.cnblogs.com/loveyatou/p/10900085.html</code></p>
+<h2 id="装载ntfs分区"><a href="#装载ntfs分区" class="headerlink" title="装载ntfs分区"></a>装载ntfs分区</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install ntfs-3g</span><br><span class="line">midkr /mnt/file1</span><br><span class="line">mount -t ntfs-3g /dev/sdbX /mnt/file1</span><br></pre></td></tr></table></figure>
 
       
 
@@ -340,41 +326,7 @@ var _hmt = _hmt || [];
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">windows</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">database</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/MySQL//" class="article-tag-list-link color1">MySQL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/MySQL/database//" class="article-tag-list-link color4">database</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
 
@@ -387,18 +339,9 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2023-11/diskgenius-file-can-not-modify.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          用diskgenius修改分区大小后,用软件修改文件不能保存.
-        
-      </div>
-    </a>
   
-  
-    <a href="/2023-10/python-exec-js-function.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">python文件中执行js函数</div>
+    <a href="/2024-12/neo4j-study.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">学习neo4j</div>
       <i class="icon-circle-right"></i>
     </a>
   
